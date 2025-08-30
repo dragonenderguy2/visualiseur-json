@@ -24,4 +24,18 @@ input[type="file"] {
     margin-bottom: 20px;
 }
 
+/* Style for buttons with hover effect */
+button {
+    background-color: #008cba; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f75; /* Darker blue on hover */
+}
+
 /* End of CSS styles */
