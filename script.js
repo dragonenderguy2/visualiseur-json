@@ -7,7 +7,8 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
                 const json = JSON.parse(e.target.result); // Parse the JSON from the file
                 displayJson(json); // Display the parsed JSON
             } catch (error) {
-                document.getElementById('jsonDisplay').textContent = 'Erreur de parsing JSON: ' + error.message; // Handle JSON parse error
+                // Handle JSON parse error
+                document.getElementById('jsonDisplay').textContent = 'Erreur de parsing JSON: ' + error.message; 
             }
         };
         reader.readAsText(file); // Read the file as text
@@ -17,5 +18,6 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
 });
 
 function displayJson(json) {
-    document.getElementById('jsonDisplay').textContent = JSON.stringify(json, null, 2); // Convert and display the JSON
+    // Convert the JSON object to a formatted string and display it
+    document.getElementById('jsonDisplay').textContent = JSON.stringify(json, null, 2); 
 }
