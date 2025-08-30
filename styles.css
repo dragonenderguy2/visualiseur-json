@@ -1,13 +1,16 @@
+/* Style for the entire body of the document */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #f4f4f4;
 }
 
+/* Style for the main heading */
 h1 {
     color: #333;
 }
 
+/* Style for the JSON display area */
 #jsonDisplay {
     background: white;
     border: 1px solid #ccc;
@@ -16,6 +19,7 @@ h1 {
     overflow-x: auto;
 }
 
+/* Style for file input elements */
 input[type="file"] {
     margin-bottom: 20px;
 }
